@@ -14,7 +14,12 @@ const loadServices = (ctx, services, i) => {
     });
 };
 
-const boot = (bootConfig = 'config.json', services) => {
+const boot = (bootConfig, services) => {
+
+  if (Array.isArray(bootConfig)) {
+    services = bootConfig;
+    bootConfig = 'config.json';
+  }
 
   if (typeof bootConfig === 'string') {
     const configPath = bootConfig;
