@@ -1,6 +1,6 @@
 {
   "name": "bootopia",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Elegant booting API for Node.js servers",
   "main": "index.js",
   "author": "Juriy Bura <juriy.bura@gmail.com>",
