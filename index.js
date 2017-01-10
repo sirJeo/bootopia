@@ -1,16 +1,18 @@
+const debug = require('debug')('bootopia');
 
 const loadServices = (ctx, services, i) => {
+  debug(`Loading service ${i}`);
   return services[i].call(null, ctx)
     .then(() => {
       if (i + 1 === services.length) {
         return ctx;
       } else {
-        return loadServices(ctx, services, i + 1);
+        return loadServices(ctx, services, i + 1) || Promise.resolve();
       }
     });
 };
 
-const boot = (bootConfig, services) => {
+const boot = (bootConfig = 'config.json', services) => {
 
   if (typeof bootConfig === 'string') {
     const configPath = bootConfig;

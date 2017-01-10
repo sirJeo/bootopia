@@ -1,3 +1,4 @@
+const debug = require('debug')('bootopia');
 
 module.exports = (ctx) => {
   ctx.app.use((req, res, next) => {

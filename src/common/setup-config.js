@@ -20,6 +20,4 @@ module.exports = (ctx) => {
   }
 
   ctx.config = nconf;
-
-  return Promise.resolve();
 };

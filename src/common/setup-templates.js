@@ -6,5 +6,4 @@ module.exports = (ctx) => {
     app.set('view engine', 'ejs');
   }
 
-  return Promise.resolve();
 };

@@ -8,5 +8,4 @@ module.exports = (ctx) => {
     ctx.app.use(express.static(path));
   }
 
-  return Promise.resolve();
 };
