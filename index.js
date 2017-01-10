@@ -2,8 +2,10 @@ const debug = require('debug')('bootopia');
 
 const loadServices = (ctx, services, i) => {
   debug(`Loading service ${i}`);
-  return services[i].call(null, ctx)
-    .then(() => {
+
+  const promise = services[i].call(null, ctx) || Promise.resolve();
+
+  return promise.then(() => {
       if (i + 1 === services.length) {
         return ctx;
       } else {
