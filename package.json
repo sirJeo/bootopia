@@ -1,0 +1,12 @@
+{
+  "name": "bootopia",
+  "version": "0.0.1",
+  "description": "Elegant booting API for Node.js servers",
+  "main": "index.js",
+  "author": "Juriy Bura <juriy.bura@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "file-exists": "^2.0.0",
+    "nconf": "^0.8.4"
+  }
+}
