@@ -10,7 +10,13 @@ const loadServices = (ctx, services, i) => {
     });
 };
 
-const boot = (bootConfig = {}, services) => {
+const boot = (bootConfig, services) => {
+
+  if (typeof bootConfig === 'string') {
+    const configPath = bootConfig;
+    bootConfig = { configPath };
+  }
+
   return loadServices({ bootConfig }, services, 0);
 };
 

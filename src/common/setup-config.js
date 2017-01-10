@@ -5,15 +5,21 @@ const fileExists = require('file-exists');
 
 module.exports = (ctx) => {
 
-  const fullPath = path.normalize(`${process.cwd()}/config.json`);
+  // TODO: encounter for absolute paths too
+  const configPath = (ctx.bootConfig && ctx.bootConfig.configPath)
+    || 'config.json';
+
+  const fullPath = path.normalize(`${process.cwd()}/${configPath}`);
   console.log(`Loading configuration from ${fullPath}`);
 
   if (!fileExists(fullPath)) {
-    console.error('Config not found, exiting');
-    process.exit(1);
+    console.log('Config file not found, using runtime configuration only');
+    nconf.argv().env();
+  } else {
+    nconf.argv().env().file({ file: fullPath });
   }
 
-  nconf.argv().env().file({ file: fullPath });
-
   ctx.config = nconf;
+
+  return Promise.resolve();
 };

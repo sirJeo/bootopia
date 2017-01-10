@@ -11,4 +11,6 @@ module.exports = (ctx) => {
   });
 
   ctx.server = server;
+
+  return Promise.resolve();
 };

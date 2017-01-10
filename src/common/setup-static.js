@@ -7,4 +7,6 @@ module.exports = (ctx) => {
     console.log('Serving static files from', path);
     ctx.app.use(express.static(path));
   }
+
+  return Promise.resolve();
 };
