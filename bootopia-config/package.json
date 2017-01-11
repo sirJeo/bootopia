@@ -1,0 +1,8 @@
+{
+  "name": "bootopia-config",
+  "version": "0.0.1",
+  "description": "Bootopia core config service",
+  "main": "index.js",
+  "author": "Juriy Bura <juriy.bura@gmail.com> (http://juriy.com)",
+  "license": "ISC"
+}
