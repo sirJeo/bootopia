@@ -1,13 +1,12 @@
 {
-  "name": "bootopia-config",
+  "name": "bootopia-express-views",
   "version": "0.0.1",
-  "description": "Bootopia core config service",
+  "description": "Service to enable express.js views with Bootopia",
   "main": "index.js",
   "repository": "https://github.com/Juriy/bootopia.git",
   "author": "Juriy Bura <juriy.bura@gmail.com> (http://juriy.com)",
   "license": "ISC",
-  "dependencies": {
-    "file-exists": "^2.0.0",
-    "nconf": "^0.8.4"
+  "peerDependencies": {
+    "express": "4.x"
   }
 }

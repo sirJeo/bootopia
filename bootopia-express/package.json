@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Express.js service for bootopia",
   "main": "index.js",
+  "repository": "https://github.com/Juriy/bootopia.git",
   "author": "Juriy Bura <juriy.bura@gmail.com> (http://juriy.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "express": "4.x"
+  }
 }

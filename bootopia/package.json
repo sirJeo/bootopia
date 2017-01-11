@@ -3,7 +3,8 @@
   "version": "0.0.4",
   "description": "Elegant booting API for Node.js servers",
   "main": "index.js",
-  "author": "Juriy Bura <juriy.bura@gmail.com>",
+  "repository": "https://github.com/Juriy/bootopia.git",
+  "author": "Juriy Bura <juriy.bura@gmail.com> (http://juriy.com)",
   "license": "ISC",
   "scripts": {
     "test": "mocha"

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Bootopia http server service",
   "main": "index.js",
+  "repository": "https://github.com/Juriy/bootopia.git",
   "author": "Juriy Bura <juriy.bura@gmail.com> (http://juriy.com)",
   "license": "ISC"
 }
