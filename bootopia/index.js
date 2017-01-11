@@ -1,8 +1,5 @@
-const debug = require('debug')('bootopia');
 
 const loadServices = (ctx, services, i) => {
-  debug(`Loading service ${i}`);
-
   const promise = services[i].call(null, ctx) || Promise.resolve();
 
   return promise.then(() => {
@@ -29,7 +26,4 @@ const boot = (bootConfig, services) => {
   return loadServices({ bootConfig }, services, 0);
 };
 
-module.exports = {
-  common: require('./src/common'),
-  boot
-};
+module.exports = boot;
