@@ -1,5 +1,11 @@
 const express = require('express');
 
-module.exports = (ctx) => {
-  ctx.app = express();
+module.exports = {
+  name: 'app',
+
+  dependencies: [],
+
+  service: () => {
+    return express();
+  }
 };

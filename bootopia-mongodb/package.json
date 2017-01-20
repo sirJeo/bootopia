@@ -1,0 +1,9 @@
+{
+  "name": "bootopia-mongodb",
+  "version": "0.0.1",
+  "description": "Bootopia mongo drivier serivce",
+  "main": "index.js",
+  "repository": "https://github.com/Juriy/bootopia.git",
+  "author": "Juriy Bura <juriy.bura@gmail.com> (http://juriy.com)",
+  "license": "ISC"
+}
