@@ -1,6 +1,6 @@
 {
   "name": "bootopia",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Elegant booting API for Node.js servers",
   "main": "index.js",
   "repository": "https://github.com/Juriy/bootopia.git",

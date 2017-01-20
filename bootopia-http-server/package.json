@@ -1,6 +1,6 @@
 {
   "name": "bootopia-http-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bootopia http server service",
   "main": "index.js",
   "repository": "https://github.com/Juriy/bootopia.git",
